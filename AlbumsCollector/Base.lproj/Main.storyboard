@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="126.38680659670166"/>
         </scene>
-        <!--View Controller-->
+        <!--Album View Controller-->
         <scene sceneID="q09-Zv-ebw">
             <objects>
-                <viewController id="Hvh-rW-1R9" sceneMemberID="viewController">
+                <viewController id="Hvh-rW-1R9" customClass="AlbumViewController" customModule="AlbumsCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0za-PD-nBd"/>
                         <viewControllerLayoutGuide type="bottom" id="YdX-pS-Thd"/>
@@ -52,8 +52,11 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-kB-nJk">
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="Hvh-rW-1R9" eventType="touchUpInside" id="k4Q-ir-Ped"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7Y-zc-BJa">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7Y-zc-BJa">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -74,10 +77,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFU-AS-w5m">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="9M8-8E-XHF"/>
-                            <barButtonItem title="Photos" id="aJ0-Sc-HPv"/>
+                            <barButtonItem systemItem="camera" id="9M8-8E-XHF">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="Hvh-rW-1R9" id="52h-Qz-JD7"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="aJ0-Sc-HPv">
+                                <connections>
+                                    <action selector="photosTapped:" destination="Hvh-rW-1R9" id="314-EW-bnM"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="albumImageView" destination="uLV-y1-hSI" id="wg1-z7-0b8"/>
+                        <outlet property="titleTextField" destination="N7Y-zc-BJa" id="DCT-8X-Vb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3F-rl-ptk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
