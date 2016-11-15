@@ -13,6 +13,7 @@
 		49F5841B1DDA9A4E004FF625 /* AlbumsCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49F584191DDA9A4E004FF625 /* AlbumsCollector.xcdatamodeld */; };
 		49F5841D1DDA9A4E004FF625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F5841C1DDA9A4E004FF625 /* Assets.xcassets */; };
 		49F584201DDA9A4E004FF625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F5841E1DDA9A4E004FF625 /* LaunchScreen.storyboard */; };
+		49F584281DDAA21E004FF625 /* clouds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49F584271DDAA21E004FF625 /* clouds.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49F5841C1DDA9A4E004FF625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F5841F1DDA9A4E004FF625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F584211DDA9A4E004FF625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F584271DDAA21E004FF625 /* clouds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clouds.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				49F584141DDA9A4E004FF625 /* ViewController.swift */,
 				49F584161DDA9A4E004FF625 /* Main.storyboard */,
 				49F5841C1DDA9A4E004FF625 /* Assets.xcassets */,
+				49F584271DDAA21E004FF625 /* clouds.jpg */,
 				49F5841E1DDA9A4E004FF625 /* LaunchScreen.storyboard */,
 				49F584211DDA9A4E004FF625 /* Info.plist */,
 				49F584191DDA9A4E004FF625 /* AlbumsCollector.xcdatamodeld */,
@@ -130,6 +133,7 @@
 				49F584201DDA9A4E004FF625 /* LaunchScreen.storyboard in Resources */,
 				49F5841D1DDA9A4E004FF625 /* Assets.xcassets in Resources */,
 				49F584181DDA9A4E004FF625 /* Main.storyboard in Resources */,
+				49F584281DDAA21E004FF625 /* clouds.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
